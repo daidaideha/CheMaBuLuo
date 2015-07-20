@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_phone">请输入您的手机号码</string>
+    <string name="hint_code">请输入验证码</string>
+    <string name="hint_car_type">选择品牌车系</string>
+    <string name="hint_car_model">选择车型</string>
+    <string name="hint_car_number">填写车牌号</string>
+    <string name="hint_car_distance">点击输入</string>
+    <string name="hint_search_car_type">搜索车系</string>
+</resources>

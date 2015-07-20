@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_my_person"
+            android:text="@string/tv_my_person"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_my_item_height"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/icon_right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_order_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_my_item_height"
+                android:id="@+id/tv_my_car"
+                android:text="@string/tv_my_car"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_my_item_height"
+                android:id="@+id/tv_my_coupon"
+                android:text="@string/tv_my_coupon"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_my_item_height"
+                android:id="@+id/tv_my_momey"
+                android:text="@string/tv_my_momey"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_my_item_height"
+                android:id="@+id/tv_my_invitation"
+                android:text="@string/tv_my_invitation"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_my_item_height"
+                android:id="@+id/tv_my_collect"
+                android:text="@string/tv_my_collect"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_my_item_height"
+                android:id="@+id/tv_my_feedback"
+                android:text="@string/tv_my_feedback"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_my_item_height"
+                android:id="@+id/tv_my_phone"
+                android:text="@string/tv_my_phone"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_order_line" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_order_line"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_my_item_height"
+            android:id="@+id/tv_my_about"
+            android:text="@string/tv_my_about"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/icon_right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_order_line" />
+
+    </LinearLayout>
+
+</ScrollView>

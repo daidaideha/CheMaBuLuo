@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/color_index_near_shop"
+    android:gravity="center_vertical"
+    android:textSize="15sp"
+    android:text="2014款 TFSI 舒适型"
+    android:background="@color/white"
+    android:id="@+id/tv_car_model"
+    android:padding="15dp"/>

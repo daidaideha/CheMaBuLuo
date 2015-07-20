@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_order_line"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_car_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_add_newcar"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_car_type"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_car_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_car_type"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@mipmap/icon_right"
+            android:textSize="15sp"
+            android:textColor="@color/color_index_more"
+            android:drawablePadding="10dp"
+            android:gravity="right"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_order_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_car_model"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_add_newcar"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_car_model"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_car_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_car_model"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@mipmap/icon_right"
+            android:textSize="15sp"
+            android:textColor="@color/color_index_more"
+            android:drawablePadding="10dp"
+            android:gravity="right"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_order_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_add_newcar"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_car_number"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_car_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_car_from"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/edt_car_number"
+            android:drawableRight="@mipmap/icon_square"
+            android:layout_marginRight="8dp"
+            android:drawablePadding="5dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:hint="@string/hint_car_number"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:maxLength="6"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnm" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_order_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_add_newcar"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_car_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_car_distance"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/edt_car_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:hint="@string/hint_car_distance"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:gravity="right"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_order_line" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/tv_save"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_header_hegiht"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_login_code"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_close"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_login_line"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/edt_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:textColorHint="@color/color_index_more" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_login_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edt_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/hint_code"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:inputType="text"
+            android:textColorHint="@color/color_index_more" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_login_line"/>
+
+        <Button
+            android:id="@+id/btn_getcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/btn_getcode"
+            android:textColor="@color/color_index_near_shop"
+            android:background="@null"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/tv_login"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/round_blue"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp">
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_agree"
+            android:text="同意车马部落"
+            android:drawablePadding="5dp"
+            android:textColor="@color/color_index_text"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户使用协议》"
+            android:layout_marginTop="1dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_header_hegiht"
+        android:background="@color/blue">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/round_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/icon_search_gray"
+            android:hint="@string/hint_search_car_type"
+            android:textSize="14sp"
+            android:textColorHint="@color/color_index_more"
+            android:layout_toLeftOf="@+id/tv_cancel"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_del"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/edt_search"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_search_del"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <com.witalk.widget.PullToRefreshView
+        android:id="@+id/pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_bg">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"/>
+
+    </com.witalk.widget.PullToRefreshView>
+</LinearLayout>

@@ -1,0 +1,5 @@
+include ':app', 'library', 'SlidingMenu', ':'
+include ':MyWidget'
+include ':QrCodeScan'
+include ':HttpThread'
+include ':swipeMenuListView'

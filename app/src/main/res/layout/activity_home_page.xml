@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layout_main"
+    android:background="@mipmap/bg_index_homepage">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_header_hegiht">
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_header_title"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_line_header" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bodyer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rl_header"
+        android:background="@color/color_bg"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_homepage_bottom_hegiht"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/color_bottom_bg">
+
+        <TextView
+            android:id="@+id/tv_homepage_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_homepage_bottom_index"
+            android:textSize="@dimen/dimen_homepage_bottom"
+            android:paddingTop="6dp"
+            android:drawableTop="@mipmap/icon_homepage_home_narmol"/>
+
+        <TextView
+            android:id="@+id/tv_homepage_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_homepage_bottom_order"
+            android:textSize="@dimen/dimen_homepage_bottom"
+            android:paddingTop="6dp"
+            android:drawableTop="@mipmap/icon_homepage_home_narmol" />
+
+        <TextView
+            android:id="@+id/tv_homepage_my"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_homepage_bottom_my"
+            android:textSize="@dimen/dimen_homepage_bottom"
+            android:paddingTop="6dp"
+            android:drawableTop="@mipmap/icon_homepage_home_narmol" />
+    </LinearLayout>
+
+</RelativeLayout>

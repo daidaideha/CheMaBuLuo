@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CheMaBuLuo.iml" filepath="$PROJECT_DIR$/CheMaBuLuo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HttpThread/HttpThread.iml" filepath="$PROJECT_DIR$/HttpThread/HttpThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyWidget/MyWidget.iml" filepath="$PROJECT_DIR$/MyWidget/MyWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QrCodeScan/QrCodeScan.iml" filepath="$PROJECT_DIR$/QrCodeScan/QrCodeScan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" filepath="$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeMenuListView/swipeMenuListView.iml" filepath="$PROJECT_DIR$/swipeMenuListView/swipeMenuListView.iml" />
+    </modules>
+  </component>
+</project>
