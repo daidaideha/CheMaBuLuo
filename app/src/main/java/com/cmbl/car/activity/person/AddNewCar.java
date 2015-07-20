@@ -77,14 +77,38 @@ public class AddNewCar extends BaseActivity implements View.OnClickListener {
             case R.id.tv_car_from:
                 break;
             case R.id.btn_save:
-                finish();
-                if (type == 1) {
-                    CMBLTools.IntentToOther(this, ShopActivity.class, null);
-				}
+                if (check()) {
+                    finish();
+                    if (type == 1) {
+                        CMBLTools.IntentToOther(this, ShopActivity.class, null);
+                    }
+                }
                 break;
             default:
                 break;
         }
+    }
+
+    private boolean check() {
+        if (CMBLTools.isValueEmpty(tv_type.getText().toString().trim())
+                || tv_type.getText().toString().trim().equals(getString(R.string.hint_car_type))) {
+            CMBLTools.toastMsg(getString(R.string.toast_choose_car_type), this);
+            return false;
+        }
+        if (CMBLTools.isValueEmpty(tv_model.getText().toString().trim())
+                || tv_model.getText().toString().trim().equals(getString(R.string.hint_car_model))) {
+            CMBLTools.toastMsg(getString(R.string.toast_choose_car_model), this);
+            return false;
+        }
+        if (CMBLTools.isValueEmpty(edt_number.getText().toString().trim())) {
+            CMBLTools.toastMsg(getString(R.string.toast_input_car_number), this);
+            return false;
+        }
+        if (CMBLTools.isValueEmpty(edt_distance.getText().toString().trim())) {
+            CMBLTools.toastMsg(getString(R.string.toast_input_car_distance), this);
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -96,6 +120,12 @@ public class AddNewCar extends BaseActivity implements View.OnClickListener {
         } else if (requestCode == 1 && resultCode == 2) {
             if (CMBLTools.isValueEmpty(tv_model.getText().toString()))
                 tv_model.setTextColor(getResources().getColor(R.color.color_index_more));
+        } else if (requestCode == 2 && resultCode == 1) {
+            tv_type.setTextColor(getResources().getColor(R.color.color_index_near_shop));
+            tv_type.setText(data.getStringExtra("type"));
+        } else if (requestCode == 2 && resultCode == 2) {
+            if (CMBLTools.isValueEmpty(tv_type.getText().toString()))
+                tv_type.setTextColor(getResources().getColor(R.color.color_index_more));
         }
     }
 }

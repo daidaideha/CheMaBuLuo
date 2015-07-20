@@ -3,9 +3,11 @@ package com.cmbl.car.activity.maintenance;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.v4.widget.DrawerLayout;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -23,7 +25,7 @@ import com.cmbl.car.widget.MySideBar;
 import com.witalk.widget.CMBLTools;
 import com.witalk.widget.PullToRefreshView;
 
-public class ChooseTypeActivity extends BaseActivity implements OnItemClickListener {
+public class ChooseTypeActivity extends BaseActivity implements OnItemClickListener, PullToRefreshView.OnHeaderRefreshListener {
 	private MySideBar sideBar;
 	private ListView mListView;
 	private DrawerLayout mDrawerLayout;
@@ -41,6 +43,7 @@ public class ChooseTypeActivity extends BaseActivity implements OnItemClickListe
 		initData();
 		initHeader();
 		initBodyer();
+		setResult(2);
 	}
 	
 	private void initData() {
@@ -88,9 +91,6 @@ public class ChooseTypeActivity extends BaseActivity implements OnItemClickListe
 		// TODO Auto-generated method stub
 		sideBar = (MySideBar) findViewById(R.id.sideBar);
 		mListView = (ListView) findViewById(R.id.listview);
-		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
-		mPullToRefreshView = (PullToRefreshView) findViewById(R.id.left_drawer);
-		mListViewDrawer = (ListView) findViewById(R.id.listviewr_left);
 		CarTypeAdatper adatper = new CarTypeAdatper(this);
 		adatper.clearList();
 		adatper.addList(listData);
@@ -98,11 +98,31 @@ public class ChooseTypeActivity extends BaseActivity implements OnItemClickListe
 		sideBar.setAdapter(adatper);
 		
 		mListView.setAdapter(adatper);
-		
+		mListView.setOnItemClickListener(this);
+
+		initDrawer();
+	}
+
+	private void initDrawer() {
+		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
+		mPullToRefreshView = (PullToRefreshView) findViewById(R.id.left_drawer);
+        mPullToRefreshView.setEnablePullTorefresh(false);
+        mPullToRefreshView.setOnHeaderRefreshListener(this);
+		mListViewDrawer = (ListView) findViewById(R.id.listviewr_left);
+
 		View header = getLayoutInflater().inflate(R.layout.view_drawer_header, null);
 		mListViewDrawer.addHeaderView(header);
 		mListViewDrawer.setAdapter(new CarTypeDrawerAdatper(this));
-		mListView.setOnItemClickListener(this);
+		mListViewDrawer.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Intent intent = new Intent();
+				intent.putExtra("type", "奥迪 A3");
+                setResult(1, intent);
+				finish();
+			}
+		});
+
 	}
 
 	@Override
@@ -116,4 +136,17 @@ public class ChooseTypeActivity extends BaseActivity implements OnItemClickListe
 		mDrawerLayout.openDrawer(mPullToRefreshView);
 	}
 
+    @Override
+    public void onHeaderRefresh(PullToRefreshView view) {
+
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (mDrawerLayout.isDrawerOpen(mPullToRefreshView)) {
+            mDrawerLayout.closeDrawer(mPullToRefreshView);
+            return  true;
+        } else
+            return super.onKeyDown(keyCode, event);
+    }
 }

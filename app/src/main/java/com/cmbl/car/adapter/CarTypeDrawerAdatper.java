@@ -58,8 +58,8 @@ public class CarTypeDrawerAdatper extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = inflater.inflate(R.layout.adapter_car_type_drawer, null);
         View iv_line = convertView.findViewById(R.id.line);
-        if (position == 0)
-            iv_line.setVisibility(View.GONE);
+//        if (position == 0)
+//            iv_line.setVisibility(View.GONE);
 //        LinearLayout ll_start = (LinearLayout) convertView.findViewById(R.id.ll_start);
 //        initView(convertView, listData.get(position));
 //        initStart(ll_start, listData.get(position));

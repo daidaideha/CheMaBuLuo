@@ -197,21 +197,21 @@ public class CMBLTools {
 	 *            跳转activity
 	 * @param bundle
 	 *            传递的bundle
-	 * @param code
+	 * @param requestCode
 	 *            result值
 	 */
 	public static void IntentToOtherForResult(Object activity, Class<?> cls,
-			Bundle bundle, int code) {
+			Bundle bundle, int requestCode) {
 
 		Intent intent = new Intent();
 		if (bundle != null)
 			intent.putExtras(bundle);
 		if (activity instanceof Activity) {
 			intent.setClass((Activity) activity, cls);
-			((Activity) activity).startActivityForResult(intent, code);
+			((Activity) activity).startActivityForResult(intent, requestCode);
 		} else if (activity instanceof Fragment) {
 			intent.setClass(((Fragment) activity).getActivity(), cls);
-			((Fragment) activity).startActivityForResult(intent, code);
+			((Fragment) activity).startActivityForResult(intent, requestCode);
 		}
 	}
 
