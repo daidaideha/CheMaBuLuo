@@ -122,7 +122,6 @@ public class ChooseTypeActivity extends BaseActivity implements OnItemClickListe
 				finish();
 			}
 		});
-
 	}
 
 	@Override

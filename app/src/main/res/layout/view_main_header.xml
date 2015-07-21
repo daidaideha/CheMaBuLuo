@@ -30,7 +30,7 @@
         android:layout_marginTop="59dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@color/color_index_box" >
+        android:background="@drawable/round_index_box" >
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,6 +41,7 @@
             android:text="@string/tv_homeapge_search"
             android:drawablePadding="5dp"
             android:textSize="13dp"
+            android:gravity="center"
             android:textColor="@color/color_index_box_text"/>
 
     </RelativeLayout>
@@ -58,7 +59,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:clickable="false"
             android:src="@mipmap/icon_message"/>
 
     </RelativeLayout>

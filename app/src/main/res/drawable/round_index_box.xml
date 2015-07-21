@@ -6,7 +6,7 @@
         android:color="@color/color_index_box" />
 
     <corners
-        android:radius="6dp" />
+        android:radius="3dp" />
 
     <size
         android:width="100dp"

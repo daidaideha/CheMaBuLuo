@@ -64,7 +64,7 @@ public class ShopActivity extends BaseActivity implements View.OnClickListener {
         headView.findViewById(R.id.tv_change).setOnClickListener(this);
         tv_carType = (TextView) headView.findViewById(R.id.tv_car_type);
         headView.setLayoutParams(new AbsListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT,
-                40));
+                80));
         MShopAdapter adatper = new MShopAdapter(this);
         adatper.addList(listShop);
         adatper.notifyDataSetChanged();
