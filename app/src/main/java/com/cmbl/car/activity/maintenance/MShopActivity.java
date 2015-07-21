@@ -22,7 +22,7 @@ import com.witalk.widget.PullToRefreshView;
 /**
  * Created by Administrator on 2015/7/17 0017.
  */
-public class ShopActivity extends BaseActivity implements View.OnClickListener {
+public class MShopActivity extends BaseActivity implements View.OnClickListener {
     private PullToRefreshView pullToRefreshView;
     private ListView mListView;
     private TextView tv_carType;

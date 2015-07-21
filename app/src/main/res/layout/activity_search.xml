@@ -22,10 +22,12 @@
             android:paddingRight="10dp"
             android:drawablePadding="10dp"
             android:drawableLeft="@mipmap/icon_search_gray"
-            android:hint="@string/hint_search_car_type"
+            android:hint="@string/tv_homeapge_search"
             android:textSize="14sp"
             android:textColorHint="@color/color_index_more"
-            android:layout_toLeftOf="@+id/tv_cancel"/>
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"/>
 
         <RelativeLayout
             android:id="@+id/rl_del"
@@ -58,20 +60,5 @@
 
     </RelativeLayout>
 
-    <com.witalk.widget.PullToRefreshView
-        android:id="@+id/pulltorefresh"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/color_bg">
-
-        <ListView
-            android:id="@+id/listview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="@null"
-            android:scrollbars="none"
-            android:listSelector="@android:color/transparent"/>
-
-    </com.witalk.widget.PullToRefreshView>
+    <include layout="@layout/view_refreshwithlist" />
 </LinearLayout>

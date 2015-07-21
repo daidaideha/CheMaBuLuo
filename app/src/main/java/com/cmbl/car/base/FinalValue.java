@@ -13,4 +13,8 @@ public class FinalValue {
 	public static final int HEADER_STYLE_TITLE = 0;
 	public static final int HEADER_STYLE_SEARCH = 1;
 	public static final int EXIT_DURATION = 1500;
+	/***
+	 * 搜索历史列表最大长度
+	 */
+	public static final int SEARCH_HISTROY_SIZE = 10;
 }

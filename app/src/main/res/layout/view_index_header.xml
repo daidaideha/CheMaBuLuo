@@ -38,29 +38,6 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rl_family"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_homepage_family"
-                android:textSize="@dimen/dimen_homepage_bodyer_text"
-                android:textColor="@color/color_index_text"
-                android:drawableTop="@mipmap/icon_family"
-                android:drawablePadding="@dimen/dimen_homepage_text_padding"
-                android:layout_centerInParent="true"/>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="@color/color_order_line" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
             android:id="@+id/rl_drive"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -165,14 +142,16 @@
             android:textColor="@color/color_index_near_shop" />
 
         <TextView
+            android:id="@+id/tv_more"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="更多"
             android:textSize="13sp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="15dp"
-            android:textColor="@color/color_index_more"/>
+            android:gravity="center_vertical"
+            android:textColor="@color/color_index_more"
+            android:paddingRight="15dp"/>
     </RelativeLayout>
 
     <View

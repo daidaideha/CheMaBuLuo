@@ -79,7 +79,6 @@
             android:name=".activity.MyCaptureActivity"
             android:screenOrientation="portrait" />
 
-
         <activity
             android:name=".activity.SplashActivity"
             android:screenOrientation="portrait" >
@@ -101,8 +100,11 @@
         <activity
             android:name=".activity.SearchActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopListActivity"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".activity.maintenance.ShopActivity"
+        <activity android:name=".activity.maintenance.MShopActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".activity.maintenance.ChooseTypeActivity"
             android:screenOrientation="portrait" />

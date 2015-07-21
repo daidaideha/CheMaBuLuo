@@ -71,10 +71,6 @@ public class HomePageActivity extends FragmentActivity implements View.OnClickLi
             window.setFlags(
                     WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
                     WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-//			// Translucent navigation bar
-//			window.setFlags(
-//					WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
-//					WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         }
 
         layout_main = (RelativeLayout) findViewById(R.id.layout_main);

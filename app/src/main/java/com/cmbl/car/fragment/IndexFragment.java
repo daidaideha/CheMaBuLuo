@@ -16,6 +16,7 @@ import android.widget.ListView;
 
 import com.cmbl.car.R;
 import com.cmbl.car.activity.SearchActivity;
+import com.cmbl.car.activity.ShopListActivity;
 import com.cmbl.car.activity.person.AddNewCar;
 import com.cmbl.car.adapter.OrderAdatper;
 import com.cmbl.car.adapter.ShopAdatper;
@@ -53,7 +54,6 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
         super.onCreate(savedInstanceState);
         listBottomView = new ArrayList<>();
         listVP = new ArrayList<>();
-        listShop = new ArrayList<>();
         for (int i = 0; i < picRes.length; i++) {
             ImageView iv = new ImageView(getActivity());
             iv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
@@ -66,6 +66,7 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
     }
 
     private void initData() {
+        listShop = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             ShopUnit shop = new ShopUnit();
             shop.setStart(i + 0.5f);
@@ -90,7 +91,6 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
 
     private void initModel(View view) {
         view.findViewById(R.id.rl_appointment).setOnClickListener(this);
-        view.findViewById(R.id.rl_family).setOnClickListener(this);
         view.findViewById(R.id.rl_drive).setOnClickListener(this);
         view.findViewById(R.id.rl_buy).setOnClickListener(this);
     }
@@ -156,6 +156,7 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
         initViewPager(headerView);
         initVPBottom(headerView);
         headerView.findViewById(R.id.rl_search).setOnClickListener(this);
+        headerView.findViewById(R.id.tv_more).setOnClickListener(this);
         mListView.addHeaderView(headerView);
         ShopAdatper adatper = new ShopAdatper(getActivity());
         adatper.addList(listShop);
@@ -244,14 +245,15 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
                 bundle.putInt("type", 1);
                 CMBLTools.IntentToOther(getActivity(), AddNewCar.class, bundle);
                 break;
-            case R.id.rl_family:
-                break;
             case R.id.rl_drive:
                 break;
             case R.id.rl_buy:
                 break;
             case R.id.rl_search:
                 CMBLTools.IntentToOther(getActivity(), SearchActivity.class, null);
+                break;
+            case R.id.tv_more:
+                CMBLTools.IntentToOther(getActivity(), ShopListActivity.class, null);
                 break;
         }
     }

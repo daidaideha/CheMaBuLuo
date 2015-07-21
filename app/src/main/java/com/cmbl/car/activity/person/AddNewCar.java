@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.cmbl.car.R;
 import com.cmbl.car.activity.maintenance.ChooseModelActivity;
 import com.cmbl.car.activity.maintenance.ChooseTypeActivity;
-import com.cmbl.car.activity.maintenance.ShopActivity;
+import com.cmbl.car.activity.maintenance.MShopActivity;
 import com.cmbl.car.base.BaseActivity;
 import com.witalk.widget.CMBLTools;
 
@@ -80,7 +80,7 @@ public class AddNewCar extends BaseActivity implements View.OnClickListener {
                 if (check()) {
                     finish();
                     if (type == 1) {
-                        CMBLTools.IntentToOther(this, ShopActivity.class, null);
+                        CMBLTools.IntentToOther(this, MShopActivity.class, null);
                     }
                 }
                 break;

@@ -4,6 +4,7 @@
     <string name="tv_header_addcar">车辆信息</string>
     <string name="tv_header_change_car">更换车辆</string>
     <string name="tv_header_add_newcar">新增车辆</string>
+    <string name="tv_header_shop">商家</string>
 
     <string name="tv_login">登录</string>
     <string name="tv_register">注册</string>
