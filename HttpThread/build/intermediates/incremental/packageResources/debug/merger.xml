@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\CheMaBuLuo_Car\HttpThread\src\main\res"/><source path="E:\CheMaBuLuo_Car\HttpThread\build\generated\res\rs\debug"/><source path="E:\CheMaBuLuo_Car\HttpThread\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="E:\CheMaBuLuo_Car\HttpThread\src\debug\res"/></dataSet><mergedItems/></merger>
