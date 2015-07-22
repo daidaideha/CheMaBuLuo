@@ -2,6 +2,8 @@ package com.cmbl.car.base;
 
 import android.app.Application;
 
+import com.baidu.mapapi.SDKInitializer;
+
 /**
  * Created by Administrator on 2015/7/13 0013.
  */
@@ -18,6 +20,7 @@ public class CMBLApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        SDKInitializer.initialize(this);
         application = this;
     }
 

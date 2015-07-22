@@ -39,4 +39,6 @@ dependencies {
     compile 'com.android.support:support-v4:22.2.0'
     compile project(':MyWidget')
     compile project(':SlidingMenu')
+    compile files('libs/baidumapapi_v3_5_0.jar')
+    compile files('libs/locSDK_5.2.jar')
 }

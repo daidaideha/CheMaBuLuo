@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.cmbl.car.R;
+import com.cmbl.car.activity.MapActivity;
 import com.cmbl.car.activity.SearchActivity;
 import com.cmbl.car.activity.ShopListActivity;
 import com.cmbl.car.activity.person.AddNewCar;
@@ -157,6 +158,7 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
         initVPBottom(headerView);
         headerView.findViewById(R.id.rl_search).setOnClickListener(this);
         headerView.findViewById(R.id.tv_more).setOnClickListener(this);
+        headerView.findViewById(R.id.rl_header_location).setOnClickListener(this);
         mListView.addHeaderView(headerView);
         ShopAdatper adatper = new ShopAdatper(getActivity());
         adatper.addList(listShop);
@@ -254,6 +256,9 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
                 break;
             case R.id.tv_more:
                 CMBLTools.IntentToOther(getActivity(), ShopListActivity.class, null);
+                break;
+            case R.id.rl_header_location:
+                CMBLTools.IntentToOther(getActivity(), MapActivity.class, null);
                 break;
         }
     }
