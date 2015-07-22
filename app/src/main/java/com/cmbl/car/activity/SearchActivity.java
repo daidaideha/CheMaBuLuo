@@ -19,7 +19,7 @@ import com.cmbl.car.base.FinalValue;
 import com.cmbl.car.model.ShopUnit;
 import com.witalk.widget.CMBLTools;
 import com.witalk.widget.PullToRefreshView;
-import com.witalk.widget.SPreferences;
+import com.witalk.widget.sPreferences;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,13 +37,13 @@ public class SearchActivity extends BaseActivity implements View.OnClickListener
     private String strHistroy;
     private String[] searchHistroy;
     private ShopAdatper adatper;
-    private SPreferences mSPreferences;
+    private sPreferences mSPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        mSPreferences = new SPreferences(this);
+        mSPreferences = new sPreferences(this);
         listShop = new ArrayList<>();
         adatper = new ShopAdatper(this);
 
