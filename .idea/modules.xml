@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CheMaBuLuo_Car.iml" filepath="$PROJECT_DIR$/CheMaBuLuo_Car.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CheMaBuLuo_2015_07-23.iml" filepath="$PROJECT_DIR$/CheMaBuLuo_2015_07-23.iml" />
       <module fileurl="file://$PROJECT_DIR$/HttpThread/HttpThread.iml" filepath="$PROJECT_DIR$/HttpThread/HttpThread.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyWidget/MyWidget.iml" filepath="$PROJECT_DIR$/MyWidget/MyWidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/QrCodeScan/QrCodeScan.iml" filepath="$PROJECT_DIR$/QrCodeScan/QrCodeScan.iml" />
