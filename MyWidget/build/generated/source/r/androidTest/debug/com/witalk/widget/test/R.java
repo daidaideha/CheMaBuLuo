@@ -17,7 +17,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_inside_color=0x7f010001;
+        public static final int border_inside_color=0x7f010009;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -26,7 +26,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_outside_color=0x7f010002;
+        public static final int border_outside_color=0x7f01000a;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -36,7 +36,88 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_thickness=0x7f010000;
+        public static final int border_thickness=0x7f010008;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max=0x7f010005;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundColor=0x7f010000;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundProgressColor=0x7f010001;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundWidth=0x7f010002;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>STROKE</code></td><td>0</td><td></td></tr>
+<tr><td><code>FILL</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int style=0x7f010007;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColor=0x7f010003;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textIsDisplayable=0x7f010006;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textSize=0x7f010004;
+    }
+    public static final class color {
+        public static final int round_blue=0x7f050000;
+        public static final int round_blue2=0x7f050001;
+        public static final int round_green=0x7f050002;
+        public static final int round_green2=0x7f050003;
+        public static final int round_red=0x7f050004;
     }
     public static final class drawable {
         public static final int bg_refresh_00=0x7f020000;
@@ -92,19 +173,21 @@ containing a value of this type.
         public static final int yu2=0x7f020032;
     }
     public static final class id {
-        public static final int imageview=0x7f060004;
-        public static final int pull_to_load_image=0x7f060002;
-        public static final int pull_to_load_progress=0x7f060001;
-        public static final int pull_to_load_text=0x7f060003;
-        public static final int pull_to_refresh_header=0x7f060000;
-        public static final int tv_refresh=0x7f060005;
+        public static final int FILL=0x7f070000;
+        public static final int STROKE=0x7f070001;
+        public static final int imageview=0x7f070006;
+        public static final int pull_to_load_image=0x7f070004;
+        public static final int pull_to_load_progress=0x7f070003;
+        public static final int pull_to_load_text=0x7f070005;
+        public static final int pull_to_refresh_header=0x7f070002;
+        public static final int tv_refresh=0x7f070007;
     }
     public static final class layout {
         public static final int widget_refresh_footer=0x7f030000;
         public static final int widget_refresh_header=0x7f030001;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
+        public static final int app_name=0x7f060000;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
@@ -121,6 +204,156 @@ containing a value of this type.
         public static final int AppTheme=0x7f040001;
     }
     public static final class styleable {
+        /** Attributes that can be used with a RoundProgressBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RoundProgressBar_max com.witalk.widget.test:max}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundProgressBar_roundColor com.witalk.widget.test:roundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundProgressBar_roundProgressColor com.witalk.widget.test:roundProgressColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundProgressBar_roundWidth com.witalk.widget.test:roundWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundProgressBar_style com.witalk.widget.test:style}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundProgressBar_textColor com.witalk.widget.test:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundProgressBar_textIsDisplayable com.witalk.widget.test:textIsDisplayable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundProgressBar_textSize com.witalk.widget.test:textSize}</code></td><td></td></tr>
+           </table>
+           @see #RoundProgressBar_max
+           @see #RoundProgressBar_roundColor
+           @see #RoundProgressBar_roundProgressColor
+           @see #RoundProgressBar_roundWidth
+           @see #RoundProgressBar_style
+           @see #RoundProgressBar_textColor
+           @see #RoundProgressBar_textIsDisplayable
+           @see #RoundProgressBar_textSize
+         */
+        public static final int[] RoundProgressBar = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#max}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.witalk.widget.test:max
+        */
+        public static final int RoundProgressBar_max = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#roundColor}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.witalk.widget.test:roundColor
+        */
+        public static final int RoundProgressBar_roundColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#roundProgressColor}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.witalk.widget.test:roundProgressColor
+        */
+        public static final int RoundProgressBar_roundProgressColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#roundWidth}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.witalk.widget.test:roundWidth
+        */
+        public static final int RoundProgressBar_roundWidth = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#style}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>STROKE</code></td><td>0</td><td></td></tr>
+<tr><td><code>FILL</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.witalk.widget.test:style
+        */
+        public static final int RoundProgressBar_style = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#textColor}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.witalk.widget.test:textColor
+        */
+        public static final int RoundProgressBar_textColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#textIsDisplayable}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.witalk.widget.test:textIsDisplayable
+        */
+        public static final int RoundProgressBar_textIsDisplayable = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#textSize}
+          attribute's value can be found in the {@link #RoundProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.witalk.widget.test:textSize
+        */
+        public static final int RoundProgressBar_textSize = 4;
         /** Attributes that can be used with a roundedimageview.
            <p>Includes the following attributes:</p>
            <table>
@@ -136,7 +369,7 @@ containing a value of this type.
            @see #roundedimageview_border_thickness
          */
         public static final int[] roundedimageview = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f010008, 0x7f010009, 0x7f01000a
         };
         /**
           <p>This symbol is the offset where the {@link com.witalk.widget.test.R.attr#border_inside_color}

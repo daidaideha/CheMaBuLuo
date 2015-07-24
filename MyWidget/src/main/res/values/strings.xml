@@ -2,4 +2,9 @@
 
     <string name="app_name">MyWidget</string>
 
+    <color name="round_green">#38D688</color>
+    <color name="round_green2">#1F99B8</color>
+    <color name="round_blue">#063DD0</color>
+    <color name="round_blue2">#6867D1</color>
+    <color name="round_red">#E12C58</color>
 </resources>

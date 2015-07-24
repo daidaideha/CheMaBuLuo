@@ -25,6 +25,10 @@ import com.witalk.widget.CMBLTools;
 import com.witalk.widget.FoucesViewPager;
 import com.witalk.widget.PullToRefreshView;
 import com.witalk.widget.VPAutoScrollManager;
+import com.witalk.widget.tranforms.BackgroundToForegroundTransformer;
+import com.witalk.widget.tranforms.CubeInTransformer;
+import com.witalk.widget.tranforms.DepthPageTransformer;
+import com.witalk.widget.tranforms.ZoomOutSlideTransformer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -115,6 +119,7 @@ public class IndexFragment extends Fragment implements ViewPager.OnPageChangeLis
 
     private void initViewPager(View view) {
         mViewPager = (FoucesViewPager) view.findViewById(R.id.viewpager);
+//        mViewPager.setPageTransformer(true, new DepthPageTransformer());
         mViewPager.setAdapter(new PagerAdapter() {
             @Override
             public int getCount() {

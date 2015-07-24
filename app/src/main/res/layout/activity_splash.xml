@@ -1,5 +1,158 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.witalk.widget.RoundImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/bg_index_homepage"
+
+        android_custom:border_thickness="5dp"
+        android_custom:border_outside_color="@color/color_bg" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bluewhiteyellow"
+        android:layout_marginTop="200dp"/>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp">
+
+        <com.witalk.widget.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android_custom:roundColor="#e1e1e1"
+            android_custom:roundProgressColor="@android:color/black"
+            android_custom:textColor="#9A32CD"
+            android_custom:textIsDisplayable="false"
+            android_custom:roundWidth="4dp"
+            android_custom:textSize="18sp"
+            android_custom:max="24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0D74F4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hour"
+                android:textSize="7sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:layout_marginLeft="100dp">
+
+        <com.witalk.widget.RoundProgressBar
+            android:id="@+id/roundProgressBar2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android_custom:roundColor="#e1e1e1"
+            android_custom:roundProgressColor="@android:color/black"
+            android_custom:textColor="#9A32CD"
+            android_custom:textIsDisplayable="false"
+            android_custom:roundWidth="4dp"
+            android_custom:textSize="18sp"
+            android_custom:max="60" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0D74F4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min"
+                android:textSize="7sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:layout_marginLeft="200dp">
+
+        <com.witalk.widget.RoundProgressBar
+            android:id="@+id/roundProgressBar3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android_custom:roundColor="#e1e1e1"
+            android_custom:roundProgressColor="@android:color/black"
+            android_custom:textColor="#9A32CD"
+            android_custom:textIsDisplayable="false"
+            android_custom:roundWidth="4dp"
+            android_custom:textSize="18sp"
+            android_custom:max="60" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0D74F4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sec"
+                android:textSize="7sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>

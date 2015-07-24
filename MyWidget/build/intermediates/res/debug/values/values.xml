@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="roundedimageview"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_inside_color"/><attr format="color" name="border_outside_color"/></declare-styleable>
     <!-- From: file:/E:/CheMaBuLuo_2015_07-23/MyWidget/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <color name="round_blue">#063DD0</color>
+    <color name="round_blue2">#6867D1</color>
+    <color name="round_green">#38D688</color>
+    <color name="round_green2">#1F99B8</color>
+    <color name="round_red">#E12C58</color>
+    <declare-styleable name="RoundProgressBar"><attr format="color" name="roundColor"/><attr format="color" name="roundProgressColor"/><attr format="dimension" name="roundWidth"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="integer" name="max"/><attr format="boolean" name="textIsDisplayable"/><attr name="style"><enum name="STROKE" value="0"/><enum name="FILL" value="1"/></attr></declare-styleable>
+    <declare-styleable name="roundedimageview"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_inside_color"/><attr format="color" name="border_outside_color"/></declare-styleable>
     <string name="app_name">MyWidget</string>
     <!-- From: file:/E:/CheMaBuLuo_2015_07-23/MyWidget/src/main/res/values/styles.xml -->
     <eat-comment/>
